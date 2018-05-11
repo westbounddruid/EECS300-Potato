@@ -1,11 +1,42 @@
+body {
+	
+}
+
+
 /* Head Bar */
 
 .headbar{
-
+	width: 100%;
 }
 
 .user-box{
+	position: relative;
+	top: 120px;
+	right: 60px;
+	float: right;
+	padding: 5px 12px;
+	padding-left: 4px;
+	border-style: solid;
+}
 
+.user-icon {
+	height: 15px;
+	width: 15px;
+	float: left;
+	margin: 0px 4px;
+}
+
+.information-bar{
+	height:150px;
+	width: 100%;
+	border-bottom-style: solid;
+}
+
+.logo{
+    width:140px;
+    height:140px;
+    position: relative;
+    float: left;
 }
 
 /* Side Bar */
