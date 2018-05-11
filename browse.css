@@ -1,3 +1,5 @@
+/* Head Bar */
+
 .headbar{
 
 }
@@ -6,6 +8,8 @@
 
 }
 
+/* Side Bar */
+
 .sidebar{
 
 }
@@ -13,6 +17,8 @@
 .sidebar-element{
 
 }
+
+/* Search Bar */
 
 .searchbar{
 
@@ -39,11 +45,15 @@ input[type=text]#search-input {
 
 .dropdown-button {
 	cursor:pointer;
+	background-color: green;
+	color: white;
+	border: none;
 }
 
 .category-content {
+	width: 25%;
 	display: none;
-	background-color: gray;
+	background-color: silver;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -55,10 +65,31 @@ input[type=text]#search-input {
 
 .category-content a:hover {
 	color: blue;
+	background-color: grey;
 }
 
 .category-dropdown:hover .category-content {
 	display: block;
+}
+
+
+/* Item Grid */
+
+.item-grid {
+
+}
+
+.item-row {
+	
+}
+
+.item {
+
+}
+
+.item img {
+	width: 50px;
+	height: 50px;
 }
 
 

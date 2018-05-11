@@ -4,17 +4,20 @@
    <link rel="stylesheet" type="text/css" href="browse.css"/>
 </header>
 <body>
+	<!-- The Head Bar -->
 	<div class="headbar">
 		<a href="browse.html"><img src="images\home_icon.png"></a>
 		<div class="user-box">
 			Hi, <b>Jared!</b>
 		</div>
 	</div>
+	<!-- The Navigation Sidebar -->
 	<div class="sidebar">
 		<div class="sidebar-element">Home</div>
 		<div class="sidebar-element">Browse</div>
 		<div class="sidebar-element">My Listings</div>
 	</div>
+	<!-- The Search Bar -->
 	<div class="searchbar">
 		<form>
 			<input id="search-input" type="text" name="search-query" placeholder="Lamps, TVs, Beanbags">
@@ -22,10 +25,19 @@
 		<div class="category-dropdown">
 			<button class="dropdown-button">Categories</button>
 			<div class="category-content">
-				<a href="#">stuff</a>
+				<a href="#">Furniture</a>
+				<a href="#">Electronics</a>
 			</div>
 	</div>
-	
+	<!-- The Browsing Content -->
+	<div class="item-grid">
+		<div class="item-row">
+			<div class="item"><a href="#"><img src="images/lamp.png"></a></div>
+			<div class="item"><a href="#"><img src="images/lamp.png"></a></div>
+			<div class="item"><a href="#"><img src="images/lamp.png"></a></div>
+		</div>
+	</div>
+			
 <script src="browse.js"></script>
 </body>
 </html>
