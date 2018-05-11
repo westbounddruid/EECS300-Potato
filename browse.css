@@ -1,14 +1,15 @@
 /* Body and Global Styling */
-
 body {
 	
 }
+
 
 
 a {
 	text-decoration: none;
 	color: black;
 }
+
 /* Head Bar */
 
 .headbar{
@@ -17,7 +18,6 @@ a {
 
 .user-box{
 	position: relative;
-	top: 110px;
 	right: 60px;
 	float: right;
 	padding: 5px 12px;
@@ -129,16 +129,23 @@ input[type=text]#search-input {
 }
 
 .item-row {
-	
+	height:155px;
+    
 }
 
-.item {
-
+.item{
+    position: relative;
+	width: 140px;
+	height: 140px;
+    float:right;
+    
 }
 
-.item img {
-	width: 50px;
-	height: 50px;
+
+
+#item2{
+    position: relative;
+  
 }
 
 
