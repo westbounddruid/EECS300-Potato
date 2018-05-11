@@ -1,7 +1,14 @@
+/* Body and Global Styling */
 body {
 	
 }
 
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
 
 /* Head Bar */
 
@@ -11,12 +18,12 @@ body {
 
 .user-box{
 	position: relative;
-	top: 120px;
 	right: 60px;
 	float: right;
 	padding: 5px 12px;
 	padding-left: 4px;
 	border-style: solid;
+	font-size: 18px;
 }
 
 .user-icon {
@@ -42,11 +49,22 @@ body {
 /* Side Bar */
 
 .sidebar{
-
+	height: auto;
+	width: 20%;
+	margin: 20px 15px;
+	border-style: solid;
+	border-bottom-style: none;
+	float: left;
 }
 
 .sidebar-element{
+	font-size: 26px;
+	border-bottom-style: solid;
+	cursor: pointer;
+}
 
+.sidebar-element:hover {
+	background-color: silver;
 }
 
 /* Search Bar */
