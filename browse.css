@@ -1,23 +1,27 @@
 /* Body and Global Styling */
+
 body {
 	
 }
-
 
 
 a {
 	text-decoration: none;
 	color: black;
 }
-
 /* Head Bar */
 
 .headbar{
 	width: 100%;
 }
+.title{
+    position:relative;
+    align-content: center;
+}
 
 .user-box{
 	position: relative;
+	top: 110px;
 	right: 60px;
 	float: right;
 	padding: 5px 12px;
@@ -132,12 +136,27 @@ input[type=text]#search-input {
 	height:155px;
     
 }
+.item-row-text{
+    height: 50px;
+    
+}
+.item-text{
+    position: relative;
+    float: right;
+    width: 130px;
+    padding-right:100px;
+}
 
 .item{
     position: relative;
 	width: 140px;
 	height: 140px;
     float:right;
+    padding-right:100px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;   
+    border-color: darkgray
     
 }
 
@@ -147,5 +166,4 @@ input[type=text]#search-input {
     position: relative;
   
 }
-
 
