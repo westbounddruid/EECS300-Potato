@@ -213,7 +213,7 @@ input[type=text]#search-input {
     position: relative;
     float: right;
     width: 130px;
-    padding-right:100px;
+    padding-right: 200px;
 }
 
 .item{
@@ -221,6 +221,7 @@ input[type=text]#search-input {
 	width: 18vh;
 /*	height:30vh;
 */    float:right;
+    padding-right: 200px;
 }
 
 
