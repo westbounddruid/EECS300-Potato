@@ -1,0 +1,25 @@
+body {
+background-color: #FFFBE6;	
+/*font-color: #356859;
+*/ font-family: 'Lekton', sans-serif;
+ }
+ 
+ #wrap-landingbtn {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:12%;
+	padding-right: 12%;
+	padding-left: 12%;		
+} 
+
+.landingbtn {
+  width: 700px;
+  height: 60px !important;
+  font-family: 'Lekton', sans-serif;
+  font-size: 38px !important;
+ }
+
+
