@@ -1,0 +1,79 @@
+<html>
+<header>
+    <title>Browsing Page</title>
+    <link rel="stylesheet" type="text/css" href="browse.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</header>
+
+<body>
+
+    <!-- The Head Bar -->
+    <div class="headbar">
+        <div class="information-bar">
+            <a href="landing.html"><img src="images\home_icon.png" class="logo"></a>
+            <h1>Wildcat Exchange</h1>
+            <!-- <div class="user-box">
+				<img src="images\usericon.png" class="user-icon">
+				Hi, <b>Jared!</b>
+			</div> -->
+        </div>
+    </div>
+
+    <!-- The Navigation Sidebar -->
+    <div class="sidebar">
+        <a href="browse.html">
+            <div class="sidebar-element"><i class="material-icons">search</i>Browse</div>
+        </a>
+        <a href="mylistings.html">
+            <div class="sidebar-element"><i class="material-icons">favorite</i>My Listings</div>
+        </a>
+        <a href="tbd.html">
+            <div class="sidebar-element"><i class="material-icons">perm_identity</i>Profile</div>
+        </a>
+    </div>
+
+    <!-- adding a listing -->
+    <div class="add_item_container">
+        <div class="upload_icon"><i class="material-icons" style="font-size: 180px;" id="add-item-icon">add_photo_alternate</i></div>
+        <div class="listing_details">
+            <button class="input">Add images</button>
+
+            <div class="input">Title:
+                <form><input id="textinput" type="text" name="textinput">
+                </form>
+            </div>
+            <div class="input">Category:<br>
+                <input id="textinput" type="text" name="textinput"></div>
+            <!-- 	<div class="category-dropdown">
+			<button class="dropdown-button">Categories</button>
+			<div class="category-content">
+				<a href="#">Furniture</a>
+				<a href="#">Electronics</a>
+			</div>
+	</div> -->
+
+            <div class="input">Condition:<br>
+                <input id="textinput" type="text" name="textinput"></div>
+            <div class="input">Description:<br>
+                <input id="textinput" type="text" name="textinput">
+               
+            </div>
+            <div class="input">Location: <br>
+                <input id="textinput" type="text" name="textinput"></div>
+            <div class="input">Available till: <br>
+                <input id="textinput" type="text" name="textinput"> 
+                
+            </div>
+            <div class="submit_icon">
+              <br>
+              <a href="browse_2.html">
+               <button class="landingbtn mdl-js-ripple-effect">
+                  Submit
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
