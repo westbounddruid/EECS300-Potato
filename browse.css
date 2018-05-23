@@ -289,17 +289,61 @@ h3 {
 	margin-top: 35px;
 }
 
+/*------My Listing styling----*/
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #356859;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.add_item_pic {
+	margin-top: 35px;
+}
+
 /*------Add Listing styling----*/
 
 .add_item_container {
 	width: 67%;
 	margin: 25px 25px 0 380px;
-/*	border: solid black;
-*/
+	border: solid black;
+
 }
 .upload_icon {
 	color: #356859;
 	margin: 25px 0 25px 375px;
+}
+
+/*.add_image {
+	font-size: 16px;
+    font-family: 'Lekton';
+   color: #356859;
+   margin-bottom:8px;
+   margin-left: 410px;
+}*/
+
+input[type=text]#textinput {
+	width: 25%;
+    box-sizing: border-box;
+    border: 2px solid #37966F;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Lekton';
+   	color: #356859; 
+    background-color: #FFFdf2;
+	background-size: 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 3px 5px 3px;
+    margin: 8px 0 8px 200px;
+
+}
+
+.input {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color:#FD5523;
 }
 
 
