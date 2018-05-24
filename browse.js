@@ -31,4 +31,9 @@ function searchFunction(event) {
     } else {}
 
 }
+
+function showGiver(){
+	var giverInfo = document.getElementById("giverInfo");
+	giverInfo.innerHTML = ('(123) 456-7890');
+}
 ;//Here goes all our javascript :)
