@@ -1,3 +1,4 @@
+
 function searchFunction(event) {
     var x = event.keyCode;
     if (x == 13) {
@@ -31,4 +32,43 @@ function searchFunction(event) {
     } else {}
 
 }
+
+function showGiver(){
+	console.log("foo");
+	var giverInfo = document.getElementById("giverInfo");
+	giverInfo.innerHTML = ('(123) 456-7890');
+}
+var curPic = 1;
+var pics = ["images/listing/lamp1.png","images/listing/lamp2.png","images/listing/lamp3.png"];
+
+function picRight(){
+	var elem = document.getElementById("listingItem");
+	if(curPic == 3){
+		curPic = 1;
+	}
+	else{
+		curPic += 1;
+	}
+
+	elem.src = pics[curPic-1];
+}
+
+function picLeft(){
+	var elem = document.getElementById("listingItem");
+	if(curPic == 1){
+		curPic = 3;
+	}
+	else{
+		curPic -= 1;
+	}
+
+	elem.src = pics[curPic-1];
+}
+
+		
+		
+		
+		
+	
+
 ;//Here goes all our javascript :)
