@@ -26,14 +26,75 @@ function searchFunction(event) {
             } else {
                 bye_node = document.getElementById(ex[i].id);
                 bye_node.parentNode.removeChild(bye_node);
+               
             }
         }
     } else {}
 
 }
 
-function showGiver(){
-	var giverInfo = document.getElementById("giverInfo");
-	giverInfo.innerHTML = ('(123) 456-7890');
+function efilter(){
+    var check,gone;
+    //electronics=document.getElementById('electronics');
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "electronics") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
 }
+
+function ffilter(){
+ var check,gone;
+    
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "furniture") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+}
+
+function mfilter(){
+         var check,gone;
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "miscellaneous") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+        for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "miscellaneous") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+
+}
+
+  (function alert() {
+    'use strict';
+    var dialogButton = document.querySelector('.dialog-button');
+    var dialog = document.querySelector('#dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    dialogButton.addEventListener('click', function() {
+       dialog.showModal();
+    });
+    dialog.querySelector('button:not([disabled])')
+    .addEventListener('click', function() {
+      dialog.close();
+    });
+  }());
 ;//Here goes all our javascript :)

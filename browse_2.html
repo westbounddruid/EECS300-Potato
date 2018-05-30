@@ -2,7 +2,6 @@
     <header>
         <title>Browsing Page</title>
         <link rel="stylesheet" type="text/css" href="browse.css"/>
-		<link rel="stylesheet" type="text/css" href="material.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,29 +20,48 @@
 			</div> -->
             </div>
         </div>
+        
+        
         <!-- The Navigation Sidebar -->
-        <div class="sidebar">
-            <a href="browse.html">
-                <div class="sidebar-element">
-                    <i class="material-icons">search</i>
-                    Browse
-                
-                </div>
-            </a>
-            <a href="mylistings.html">
-                <div class="sidebar-element">
-                    <i class="material-icons">favorite</i>
-                    My Listings
-                
-                </div>
-            </a>
-            <a href="tbd.html">
-                <div class="sidebar-element">
-                    <i class="material-icons">perm_identity</i>
-                    Profile
-                
-                </div>
-            </a>
+        <div class="side-panel">
+            <div class="sidebar">
+                <a href="browse.html">
+                    <div class="sidebar-element">
+                        <i class="material-icons">search</i>
+                        Browse
+
+                    </div>
+                </a>
+                <a href="mylistings.html">
+                    <div class="sidebar-element">
+                        <i class="material-icons">favorite</i>
+                        My Listings
+
+                    </div>
+                </a>
+                <a href="tbd.html">
+                    <div class="sidebar-element">
+                        <i class="material-icons">perm_identity</i>
+                        Profile
+
+                    </div>
+                </a>
+            </div>
+            <div class="filters">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked onclick="efilter()"
+                    >
+                  <span class="mdl-checkbox__label">Electronics</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2" >
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked onclick="ffilter()">
+                  <span class="mdl-checkbox__label">Furniture</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2" >
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked onclick="mfilter()">
+                  <span class="mdl-checkbox__label">Miscellaneous</span>
+                </label>
+            </div>
         </div>
         <!-- The Search Bar -->
         <div class="searchbar">
@@ -60,7 +78,7 @@
 	</div> -->
         <!-- The Browsing Content -->
         <div class="wrap-itemgrid">
-            <div class="item_card" id="couch">           
+            <div class="item_card furniture" id="couch">           
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/couch.png" alt="couch">
@@ -71,7 +89,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="backpack">
+            <div class="item_card miscellaneous" id="backpack">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/backpack.png" alt="backpack">
@@ -82,7 +100,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="knives">
+            <div class="item_card miscellaneous" id="knives">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/knives.png" alt="knives">
@@ -93,7 +111,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="bed">
+            <div class="item_card furniture" id="bed">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/bed.png" alt="bed">
@@ -104,7 +122,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="tv">
+            <div class="item_card electronics" id="tv">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/tv.png" alt="TV">
@@ -115,7 +133,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="desk">
+            <div class="item_card furniture" id="desk">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/desk.png" alt="desk">
@@ -126,7 +144,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="earphones">
+            <div class="item_card  electronics" id="earphones">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/earphones.png" alt="Earphones">
@@ -137,7 +155,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="candle">
+            <div class="item_card miscellaneous" id="candle">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/candle.png" alt="candle">
@@ -148,7 +166,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item_card" id="couch">
+            <div class="item_card furniture" id="couch">
                 <a href="listing.html">
                     <div class="item_pic">
                         <img src="images/couch2.JPG" alt="couch">
@@ -159,13 +177,14 @@
                     </div>
                 </a>
             </div>
-		</div>
-        <div class="alert_link">
-            <p>
-                <i>Not what you're looking for? <a href="tbd.html"><u>Get notified when there are new listings.</u></i></a>
-            </p>
-		</div>
-	</div>
-<script src="browse.js"></script>
-</body>
-</html>
+            <div class="alert_link">
+                <p>
+                    <i>
+                        Not what you're looking for? 
+                        
+                        <a href="tbd.html">
+                            <u>Get notified when there are new listings.</u>
+                    </i>
+                </p>
+</a></div></div><script src="browse.js"></script>
+</body></html>
