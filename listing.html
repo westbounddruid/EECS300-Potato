@@ -19,30 +19,31 @@
 			</div> -->
 		</div>
 	</div>
-	<div class="sidebar">
-        <a href="browse.html">
-            <div class="sidebar-element">
-                <i class="material-icons">search</i>
-                Browse      
-            </div>
-        </a>
-        <a href="mylistings.html">
-            <div class="sidebar-element">
-                <i class="material-icons">favorite</i>
-                My Listings
-            </div>
-        </a>
-        <a href="tbd.html">
-            <div class="sidebar-element">
-                <i class="material-icons">perm_identity</i>
-                Profile            
-            </div>
-        </a>
-    </div>
+	<div class="side-panel">
+		<div class="sidebar">
+			<a href="browse.html">
+				<div class="sidebar-element"><i class="material-icons">search</i> Browse</div>
+			</a>
+			<a href="mylistings.html">
+				<div class="sidebar-element"><i class="material-icons">favorite</i> My Listings</div>
+			</a>
+			<a href="tbd.html">
+				<div class="sidebar-element"><i class="material-icons">perm_identity</i> Profile</div>
+			</a>
+		</div>
+	</div>
 	<div class="body-container">
 		<!-- The Listing Content -->
 		<div class="item_container">
-			<div><img class="item_photo" src="images/lamp.png"> </div>
+			<div class="pictures-row">
+				<button class="mdl-button mdl-js-button mdl-button--raised picButton" onclick="picLeft()">
+					Prev
+				</button>
+				<a href="#"><img id="listingItem" src="images/listing/lamp1.png"></a>
+				<button class="mdl-button mdl-js-button mdl-button--raised picButton" onclick="picRight()">
+					Next
+				</button>
+			</div>
 			<div class="item_name">Floor Lamp</div>
 			<div class="item_detail_container">
 				<div class="field"><b>Condition:</b></div>

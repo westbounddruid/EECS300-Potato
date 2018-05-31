@@ -1,3 +1,30 @@
+var curPic = 1;
+var pics = ["images/listing/lamp1.png","images/listing/lamp2.png","images/listing/lamp3.png"];
+
+function picRight(){
+	var elem = document.getElementById("listingItem");
+	if(curPic == 3){
+		curPic = 1;
+	}
+	else{
+		curPic += 1;
+	}
+
+	elem.src = pics[curPic-1];
+}
+
+function picLeft(){
+	var elem = document.getElementById("listingItem");
+	if(curPic == 1){
+		curPic = 3;
+	}
+	else{
+		curPic -= 1;
+	}
+
+	elem.src = pics[curPic-1];
+}
+
 function searchFunction(event) {
     var x = event.keyCode;
     if (x == 13) {
@@ -26,14 +53,75 @@ function searchFunction(event) {
             } else {
                 bye_node = document.getElementById(ex[i].id);
                 bye_node.parentNode.removeChild(bye_node);
+               
             }
         }
     } else {}
 
 }
 
-function showGiver(){
-	var giverInfo = document.getElementById("giverInfo");
-	giverInfo.innerHTML = ('(123) 456-7890');
+function efilter(){
+    var check,gone;
+    //electronics=document.getElementById('electronics');
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "electronics") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
 }
+
+function ffilter(){
+ var check,gone;
+    
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "furniture") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+}
+
+function mfilter(){
+         var check,gone;
+    check=document.getElementsByClassName("item_card");
+    
+    for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "miscellaneous") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+        for (i = 0; i < check.length; i++) {
+            if (check[i].classList[1] == "miscellaneous") {
+                gone = document.getElementById(check[i].id);
+                gone.parentNode.removeChild(gone);
+            } else {
+            }
+        }
+
+}
+
+  (function alert() {
+    'use strict';
+    var dialogButton = document.querySelector('.dialog-button');
+    var dialog = document.querySelector('#dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    dialogButton.addEventListener('click', function() {
+       dialog.showModal();
+    });
+    dialog.querySelector('button:not([disabled])')
+    .addEventListener('click', function() {
+      dialog.close();
+    });
+  }());
 ;//Here goes all our javascript :)

@@ -1,7 +1,8 @@
 <html>
 <header>
     <title>Browsing Page</title>
-    <link rel="stylesheet" type="text/css" href="browse.css"/>
+    <link rel="stylesheet" type="text/css" href="browse.css">
+	<link rel="stylesheet" type="text/css" href="addlisting.css">
 	<link rel="stylesheet" type="text/css" href="material.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,21 +23,22 @@
     </div>
 
     <!-- The Navigation Sidebar -->
-    <div class="sidebar">
-        <a href="browse.html">
-            <div class="sidebar-element"><i class="material-icons">search</i> Browse</div>
-        </a>
-        <a href="mylistings.html">
-            <div class="sidebar-element"><i class="material-icons">favorite</i> My Listings</div>
-        </a>
-        <a href="tbd.html">
-            <div class="sidebar-element"><i class="material-icons">perm_identity</i> Profile</div>
-        </a>
-    </div>
-
+    <div class="side-panel">
+		<div class="sidebar">
+			<a href="browse.html">
+				<div class="sidebar-element"><i class="material-icons">search</i> Browse</div>
+			</a>
+			<a href="mylistings.html">
+				<div class="sidebar-element"><i class="material-icons">favorite</i> My Listings</div>
+			</a>
+			<a href="tbd.html">
+				<div class="sidebar-element"><i class="material-icons">perm_identity</i> Profile</div>
+			</a>
+		</div>
+	</div>
     <!-- adding a listing -->
     <div class="add_item_container">
-        <div class="upload_icon" id="uploadIcon">
+        <div class="upload_icon" onclick="addImage()" id="uploadIcon">
 			<i class="material-icons" style="font-size: 180px;" id="add-item-icon">add_photo_alternate</i>
 		</div>
 		<div class="pictures">
@@ -56,22 +58,45 @@
 			<!-- Category -->
 			<form action="#">
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="category">
+					<select class="mdl-textfield__input" type="text" id="category">
+						<option></option>
+						<option value="1">Furniture</option>
+						<option value="2">Electronics</option>
+						<option value="3">Tools</option>
+						<option value="4">Clothing</option>
+					</select>
 					<label class="mdl-textfield__label" for="category">Category:</label>
 				</div>
 			</form>
 			<!-- Location -->
 			<form action="#">
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="location">
+					<select class="mdl-textfield__input" type="text" id="location">
+						<option></option>
+						<option value="1">On-Campus North</option>
+						<option value="2">On-Campus South</option>
+						<option value="3">Off-campus North</option>
+						<option value="4">Off-Campus South</option>
+					</select>
 					<label class="mdl-textfield__label" for="location">Location:</label>
 				</div>
 			</form>
+			<!-- Pickup/ Dropoff -->
+			<div class="delivery-method-container">
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="pickup">
+					<input type="checkbox" id="pickup" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Item for pickup</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="dropoff">
+					<input type="checkbox" id="dropoff" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Item for dropoff</span>
+				</label>
+			</div>
 			<!-- Available Till -->
 			<form action="#">
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" pattern="[0-9]{2}[/]{1}[0-9]{2}[/]{1}[0-9]{4}" id="until">
-					<label class="mdl-textfield__label" for="until">Available Until: (MM/DD/YYYY)</label>
+					<input class="mdl-textfield__input" type="text" pattern="[0-9]{2}[/]{1}[0-9]{2}[/]{1}[0-9]{2}" id="until">
+					<label class="mdl-textfield__label" for="until">Available Until: (MM/DD/YY)</label>
 					<span class="mdl-textfield__error">MM/DD/YYYY</span>
 				</div>
 			</form>
@@ -107,8 +132,8 @@
 			</div>
             <div class="submit_icon">
               <br>
-              <a href="browse_2.html">
-               <button class="landingbtn mdl-js-ripple-effect">
+              <a href="mylistings_2.html">
+               <button class="addbtn">
                   Submit
                 </button>
                 </a>
