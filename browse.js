@@ -33,6 +33,10 @@ function searchFunction(event) {
 
 }
 
+function notif(){
+	alert("You will receive an email when a new item is listed!");
+}
+
 function showGiver(){
 	console.log("foo");
 	var giverInfo = document.getElementById("giverInfo");
