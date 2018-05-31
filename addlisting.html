@@ -1,7 +1,9 @@
 <html>
 <header>
-    <title>Browsing Page</title>
-    <link rel="stylesheet" type="text/css" href="browse.css"/>
+  <title>Browsing Page</title>
+  <link rel="stylesheet" type="text/css" href="browse.css">
+	<link rel="stylesheet" type="text/css" href="addlisting.css">
+	<link rel="stylesheet" type="text/css" href="material.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </header>
@@ -35,21 +37,97 @@
 
     <!-- adding a listing -->
     <div class="add_item_container">
-        <div class="upload_icon"><i class="material-icons" style="font-size: 180px;" id="add-item-icon">add_photo_alternate</i></div>
+        <div class="upload_icon" onclick="addImage()" id="uploadIcon">
+			<i class="material-icons" style="font-size: 180px;" id="add-item-icon">add_photo_alternate</i>
+		</div>
+		<div class="pictures">
+			<img src="images/couch2.jpg" alt="couch" id="Image2">
+			<img src="images/couch2.jpg" alt="couch" id="Image1">
+			<img src="images/couch2.jpg" alt="couch" id="Image3">
+		</div>
         <div class="listing_details">
-            <button class="input">Add images</button>
-
-            <div class="input">Title:
-                <form><input id="textinput" type="text" name="textinput">
-                </form>
-            </div>
-            <div class="input">Category:<br>
-                <input id="textinput" type="text" name="textinput"></div>
-            <!-- 	<div class="category-dropdown">
-			<button class="dropdown-button">Categories</button>
-			<div class="category-content">
-				<a href="#">Furniture</a>
-				<a href="#">Electronics</a>
+            <button class="addbtn" onclick="addImage()">Add images</button>
+			<!-- Title -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="title">
+					<label class="mdl-textfield__label" for="title">Title:</label>
+				</div>
+			</form>
+			<!-- Category -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<select class="mdl-textfield__input" type="text" id="category">
+						<option></option>
+						<option value="1">Furniture</option>
+						<option value="2">Electronics</option>
+						<option value="3">Tools</option>
+						<option value="4">Clothing</option>
+					</select>
+					<label class="mdl-textfield__label" for="category">Category:</label>
+				</div>
+			</form>
+			<!-- Location -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<select class="mdl-textfield__input" type="text" id="location">
+						<option></option>
+						<option value="1">On-Campus North</option>
+						<option value="2">On-Campus South</option>
+						<option value="3">Off-campus North</option>
+						<option value="4">Off-Campus South</option>
+					</select>
+					<label class="mdl-textfield__label" for="location">Location:</label>
+				</div>
+			</form>
+			<!-- Pickup/ Dropoff -->
+			<div class="delivery-method-container">
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="pickup">
+					<input type="checkbox" id="pickup" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Item can be picked up</span>
+				</label>
+				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="dropoff">
+					<input type="checkbox" id="dropoff" class="mdl-checkbox__input">
+					<span class="mdl-checkbox__label">Item can be dropped off</span>
+				</label>
+			</div>
+			<!-- Available Till -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" pattern="[0-9]{2}[/]{1}[0-9]{2}[/]{1}[0-9]{2}" id="until">
+					<label class="mdl-textfield__label" for="until">Available Until: (MM/DD/YY)</label>
+					<span class="mdl-textfield__error">MM/DD/YYYY</span>
+				</div>
+			</form>
+			<!-- Description -->
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<textarea class="mdl-textfield__input" type="text" rows= "3" id="description" ></textarea>
+					<label class="mdl-textfield__label" for="description">Description:</label>
+				</div>
+			</form>
+			<!-- Condition radios -->
+			<div class="condition-container">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-broken">
+					<input type="radio" id="option-broken" class="mdl-radio__button" name="options" value="1" >
+					<span class="mdl-radio__label">Broken</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-wellused">
+					<input type="radio" id="option-wellused" class="mdl-radio__button" name="options" value="2" >
+					<span class="mdl-radio__label">Well Used</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-used">
+					<input type="radio" id="option-used" class="mdl-radio__button" name="options" value="3" checked>
+					<span class="mdl-radio__label">Used</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-likenew">
+					<input type="radio" id="option-likenew" class="mdl-radio__button" name="options" value="4">
+					<span class="mdl-radio__label">Like New</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-new">
+					<input type="radio" id="option-new" class="mdl-radio__button" name="options" value="5">
+					<span class="mdl-radio__label">New</span>
+				</label>
 			</div>
 	</div> -->
 
@@ -67,8 +145,8 @@
             </div>
             <div class="submit_icon">
               <br>
-              <a href="browse_2.html">
-               <button class="landingbtn mdl-js-ripple-effect">
+              <a href="mylistings_2.html">
+               <button class="addbtn">
                   Submit
                 </button>
                 </a>

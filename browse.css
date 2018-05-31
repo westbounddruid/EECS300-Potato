@@ -315,42 +315,6 @@ h3 {
 
 /*------Add Listing styling----*/
 
-.add_item_container {
-	width: 67%;
-	margin: 25px 25px 0 380px;
-/*	border: solid black;
-*/
-}
-.upload_icon {
-	color: #356859;
-	margin: 25px 0 25px 0px;
-}
-
-.upload_icon{
-    display:flex;
-    flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-   
-}
-
-#add-item-icon{
-    
-}
-.listing_details{
-    display:flex;
-    flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-}
-
-.mdl-button{
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-
-}
 
 .mdl-dialog {
   border: none;
@@ -389,6 +353,3 @@ h3 {
   .mdl-dialog__content {
     padding: 20px 24px 24px 24px;
     color: rgba(0,0,0, 0.54); }
-
-
-
