@@ -36,10 +36,7 @@
                 <a href="mylistings.html">
                     <div class="sidebar-element">
                         <i class="material-icons">favorite</i>
-                        My Listings
-
-                    
-                    
+                        My Listings                    
                     </div>
                 </a>
                 <a href="tbd.html">
@@ -173,18 +170,16 @@
                     </div>
                 </a>
             </div>
-            <div class="alert_link">
+             <div class="alert_link">
                 <p>
                     <i>
                         Not what you're looking for? 
-                        
-                        
-                        
-                      
-                        Get notified when there are new listings.
+                       Get notified when there are new listings. <br>
                     </i>
                 </p>
-                <button class="mdl-button mdl-button--raised mdl-js-button dialog-button landingbtn">Get Notified</button>
+            </div>
+             <div class="alert_section">
+              <button class="dialog-button">Get Notified</button>
             </div>
 		</div>
 		<dialog id="dialog" class="mdl-dialog">
@@ -196,10 +191,16 @@
 				<form><input id="textinput" type="text" name="textinput" placeholder="abd@u.northwestern.edu"></form>
 			</div>
 			<div class="mdl-dialog__actions">
-				<button type="button" class="mdl-button">Close</button>
-				<button type="button" class="mdl-button">Submit</button>
+				<button type="button" class="mdl-button submit">Close</button>
+				<button type="button" class="mdl-button" id="submit" onclick="toastfunc()">Submit</button>
 			</div>
 		</dialog>
+		
+		<div id="email_submit" class="mdl-js-snackbar mdl-snackbar">
+          <div class="mdl-snackbar__text"></div>
+          <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+		
 	</body>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 <script src="browse.js"></script>
