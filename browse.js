@@ -119,7 +119,10 @@ function mfilter(){
     dialogButton.addEventListener('click', function() {
        dialog.showModal();
     });
-    
+    dialog.querySelector('button:not([disabled])')
+    .addEventListener('click', function() {
+      dialog.close();
+    });
   }());
 
 (function toastfunc() {
@@ -131,8 +134,5 @@ function mfilter(){
     var data = {message: 'You will receive an email when an item becomes available.' };
     snackbarContainer.MaterialSnackbar.showSnackbar(data);
   });
-   dialog.querySelector('#submit').addEventListener('click', function() {
-      dialog.close();
-    });
 }());
 //Here goes all our javascript :)

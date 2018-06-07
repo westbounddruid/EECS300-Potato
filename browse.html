@@ -178,7 +178,9 @@
 		</div>
 		<dialog id="dialog" class="mdl-dialog">
 
-
+            <div class="mdl-dialog__actions">
+                <button class="mdl-button mdl-button--icon"><i class="material-icons close">close</i></button>
+            </div>
 
             
 			<h2 class="mdl-dialog__title">Create An Alert</h2>
@@ -189,7 +191,7 @@
 				<form><input id="textinput" type="text" name="textinput" placeholder="jack@u.northwestern.edu"></form>
 			</div>
 			<div class="mdl-dialog__actions">
-				<button type="button" class="dialog-submit" id="submit">Submit</button>
+				<button type="button" class="mdl-button" id="submit" onclick="toastfunc()">Submit</button>
 			</div>
 		</dialog>
 		

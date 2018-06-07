@@ -1,123 +1,93 @@
 <html>
 <header>
-    <title>Listing Page</title>
-    <link rel="stylesheet" type="text/css" href="browse.css" />
-    <link rel="stylesheet" type="text/css" href="material.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Listing Page</title>
+   <link rel="stylesheet" type="text/css" href="browse.css"/>
+   <link rel="stylesheet" type="text/css" href="material.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Lekton|Montserrat" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </header>
-
 <body>
-    <!-- The Head Bar -->
-    <div class="headbar">
-        <div class="information-bar">
-            <a href="landing.html"><img src="images\home_icon.png" class="logo"></a>
-            <h1>Wildcat Exchange</h1>
-            <!-- <div class="user-box">
+	<!-- The Head Bar -->
+	<div class="headbar">
+		<div class= "information-bar"> 
+			<a href="landing.html"><img src="images\home_icon.png" class="logo"></a>
+		<h1>Wildcat Exchange</h1>
+			<!-- <div class="user-box">
 				<img src="images\usericon.png" class="user-icon">
 				Hi, <b>Jared!</b>
 			</div> -->
-        </div>
-    </div>
-    <div class="side-panel">
-        <div class="sidebar">
-            <a href="browse.html">
-                <div class="sidebar-element"><i class="material-icons">search</i> Browse</div>
-            </a>
-            <a href="mylistings.html">
-                <div class="sidebar-element"><i class="material-icons">favorite</i> My Listings</div>
-            </a>
-            <a href="tbd.html">
-                <div class="sidebar-element"><i class="material-icons">perm_identity</i> Profile</div>
-            </a>
-        </div>
-    </div>
-    <div class="body-container">
-        <!-- The Listing Content -->
-        <div class="item_container">
-            <div class="pictures-row">
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color :#fd764e" onclick="picLeft()"><i class="material-icons">navigate_before</i>
+		</div>
+	</div>
+	<div class="side-panel">
+		<div class="sidebar">
+			<a href="browse.html">
+				<div class="sidebar-element"><i class="material-icons">search</i> Browse</div>
+			</a>
+			<a href="mylistings.html">
+				<div class="sidebar-element"><i class="material-icons">favorite</i> My Listings</div>
+			</a>
+			<a href="tbd.html">
+				<div class="sidebar-element"><i class="material-icons">perm_identity</i> Profile</div>
+			</a>
+		</div>
+	</div>
+	<div class="body-container">
+		<!-- The Listing Content -->
+		<div class="item_container">
+			<div class="pictures-row">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color :#fd764e" onclick="picLeft()"><i class="material-icons">navigate_before</i>
 				</button>
 
-                <a href="#"><img id="listingItem" src="images/listing/lamp1.png"></a>
+				<a href="#"><img id="listingItem" src="images/listing/lamp1.png"></a>
 
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color :#fd764e" onclick="picRight()"><i class="material-icons">navigate_next</i>
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color :#fd764e" onclick="picRight()"><i class="material-icons">navigate_next</i>
 				</button>
-            </div>
-            <div class="item_name">Floor Lamp</div>
-            <div class="item_detail_container">
-                <div class="field"><b>Category:</b></div>
-                <div class="entry"><i>Appliance</i></div>
-            </div>
-            <div class="item_detail_container">
-                <div class="field"><b>Location:</b></div>
-                <div class="entry"><i>Off Campus, South</i></div>
-            </div>
-            <div class="item_detail_container">
-                <div class="field"><b>Available for:</b></div>
-                <div class="entry"><i>Pickup</i></div>
-            </div>
-            <div class="item_detail_container">
-                <div class="field"><b>Available till:</b></div>
-                <div class="entry"><i>06/27/2018</i></div>
-            </div>
-            <div class="item_detail_container">
-                <div class="field"><b>Condition:</b></div>
-                <div class="entry"><i>Like New</i></div>
-            </div>
-
-            <div class="item_detail_container">
-                <div class="field"><b>Description:</b></div>
-                <div class="entry"><i>Free standing and bright.</i></div>
-            </div>
-
-
-            <div class="item_detail_container">
-                <div class="field"><b>Contact Info:</b></div>
-                <div class="entry"><i>user22@gmail.com, 857-389-9446</i></div>
-            </div>
-            <div class="contact_person">Contact the Giver if you're interested in the item!</div>
-
-            <!-- contact button-->
-            <div class="contact_section">
-                <button class="contact-button">Contact Seller</button>
-                
-            </div>
-        </div>
-        
-        <!-- CONTACT DIALOG -->
-           <!-- Dialog box-->
-    <dialog id="contact" class="mdl-dialog">
-      <h3 class="mdl-dialog__title">Wildcat Exchange</h3>
-      <div class="mdl-dialog__content">
-        <p>
-          Type the message you would like to send to the seller.
-        </p>
-        			<!-- Description -->
-			<form action="#">
-				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<textarea class="mdl-textfield__input" type="text" rows= "1" id="description" ></textarea>
-					<label class="mdl-textfield__label" for="description"></label>
-				</div>
-			</form>
-        
-      </div>
-      <div class="mdl-dialog__actions">
-        <button type="button" class="contact-submit-b" id="submit-contact">Submit</button>
-      </div>
-    </dialog>
-        
-    <!-- Snackbar -->
-        <div id="listing_contact" class="mdl-js-snackbar mdl-snackbar">
-          <div class="mdl-snackbar__text"></div>
-          <button class="mdl-snackbar__action" type="button"></button>
-        </div>
-
-        <!-- 
+			</div>
+			<div class="item_name">Floor Lamp</div>
+			<div class="item_detail_container">
+				<div class="field"><b>Category:</b></div>
+				<div class="entry"><i>Appliance</i></div>
+			</div>
+			<div class="item_detail_container">
+				<div class="field"><b>Location:</b></div>
+				<div class="entry"><i>Off Campus, South</i></div>
+			</div>
+			<div class="item_detail_container">
+				<div class="field"><b>Available for:</b></div>
+				<div class="entry"><i>Pickup</i></div>
+			</div>
+			<div class="item_detail_container">
+				<div class="field"><b>Available till:</b></div>
+				<div class="entry"><i>06/27/2018</i></div>
+			</div>
+			<div class="item_detail_container">
+				<div class="field"><b>Condition:</b></div>
+				<div class="entry"><i>Like New</i></div>
+			</div>
+			
+						<div class="item_detail_container">
+				<div class="field"><b>Description:</b></div>
+				<div class="entry"><i>Free standing and bright.</i></div>
+			</div>
+			
+			
+			<div class="item_detail_container">
+				<div class="field"><b>Contact Info:</b></div>
+				<div class="entry"><i>user22@gmail.com, 857-389-9446</i></div>
+			</div>
+			<div class="contact_person">Contact the Giver if you're interested in the item!</div>
+			<!-- <div>
+				<button id="contact-button" onclick="showGiver()">
+				Contact Giver</button>
+			<p class="giverInfo"></p>
+			</div> -->
+		</div>
+		
+			<!-- 
 	</div> -->
 </body>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="listing.js"></script>
+
+<script src="browse.js"></script>
 
 </html>

@@ -270,6 +270,7 @@ border: none;
     transition: 0.3s;
     margin: 0 25px 25px 25px;
     text-align: center;
+	position: relative;
 }
 
 .item_pic {
@@ -372,27 +373,25 @@ color:#FD5523 ;
 	margin: 0 0 12px 0;
 
 }
-
-/*Listing page button*/ 
-.contact_section{
-    display: flex;
-	flex-wrap: wrap;
-	flex-direction:column;
-	align-items:center;
-    padding-left: 5%;
-    
-}
-  .contact-button{
- border-radius: 24px;
+/*
+#contact-button {
+  border-radius: 28;
+  border-radius: 28;
+  border-radius: 28px;
   font-family: 'Lekton', sans-serif;
   color: #356859;
-  font-size: 24px;
+  font-size: 23px;
   background: #FFFBE6;
+  padding: 10px 20px 10px 20px;
   border: solid #356859 2px;
   text-decoration: none;
-  cursor: pointer; 
-   /* box-shadow:5px 5px 5px 2px grey; */
-}
+  cursor: pointer;
+ }*/
+
+/*#contact-button:hover {
+  background: #B9E4C9;
+  text-decoration: none;
+}*/
 
 .contact_person{
 	margin-left: 190px;
@@ -401,35 +400,13 @@ color:#FD5523 ;
 	font-family: 'Montserrat', sans-seri
 }
 
+
 .body-container{
 	display:flex;
 	justify-content:flex-start;
 }
-#contact{
-    background-color: #FFFdf2;
-}
-#description{
-	background-color: #fff6cc !important;
-	height: 20%;
-    
-    
-}
 
-.contact-submit-b{
-    display:flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-    font-family: 'Lekton', sans-serif;
-    color: #356859;
-    font-size: 18px;
-    background: #FFFBE6;
-    border: solid #356859 2px;
-    border-radius: 24px;
-    text-decoration: none;
-    cursor: pointer;
 
-}
 
 
 /*------My Listing styling----*/
@@ -441,22 +418,6 @@ color:#FD5523 ;
 }
 
 /*------ Alert Styling -------*/
-.dialog-submit{
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-    margin-left: 200px;
-    font-family: 'Lekton', sans-serif;
-    color: #356859;
-    font-size: 18px;
-    background: #FFFBE6;
-    border: solid #356859 2px;
-    border-radius: 24px;
-    text-decoration: none;
-    cursor: pointer;
-
-}
 #textinput {
 	color: #356859;
 	font-family: 'Lekton', sans-serif;
@@ -467,10 +428,6 @@ color:#FD5523 ;
 
 #dialog {
     background-color: #FFFdf2;
-}
-
-.mdl-dialog__content{
-   height:auto;
 }
 .mdl-dialog__title {
 	font-size: 30px !important;
