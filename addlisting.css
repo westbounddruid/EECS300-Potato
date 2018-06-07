@@ -22,7 +22,7 @@
 
 .upload_icon {
 	color: #356859;
-	margin: 25px 0 25px 0px;
+	margin: 10px 0px;
 }
 
 .upload_icon{
@@ -39,7 +39,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 20px 0px;
+	margin: 10px 0px;
 }
 
 #Image1{
@@ -70,7 +70,7 @@
 }
 #description{
 	background-color: #fff6cc !important;
-	height: 150px;
+	height: 100px;
 }
 #add-item-icon{
     
@@ -88,7 +88,7 @@
   color: #356859;
   font-size: 18px;
   background: #FFFBE6;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 10px;
   border: solid #356859 2px;
   text-decoration: none;
   cursor: pointer;
@@ -125,4 +125,8 @@
     flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+}
+
+.entry{
+	margin-bottom: 0px !important;
 }
