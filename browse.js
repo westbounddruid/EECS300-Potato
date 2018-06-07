@@ -119,9 +119,20 @@ function mfilter(){
     dialogButton.addEventListener('click', function() {
        dialog.showModal();
     });
-    dialog.querySelector('button:not([disabled])')
-    .addEventListener('click', function() {
+    
+  }());
+
+(function toastfunc() {
+  'use strict';
+  var snackbarContainer = document.querySelector('#email_submit');
+  var showToastButton = document.querySelector('#submit');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'You will receive an email when an item becomes available.' };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+   dialog.querySelector('#submit').addEventListener('click', function() {
       dialog.close();
     });
-  }());
-;//Here goes all our javascript :)
+}());
+//Here goes all our javascript :)
