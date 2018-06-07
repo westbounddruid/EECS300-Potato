@@ -349,6 +349,10 @@ color:#FD5523 ;
 
 }
 
+.detailTable{
+	margin:0 0 12px 255px;
+	}
+	
 .item_detail_container {
 	display:flex;
 	justify-content:flex-start;
@@ -392,11 +396,12 @@ color:#FD5523 ;
   border: solid #356859 2px;
   text-decoration: none;
   cursor: pointer; 
+  margin: 0 0 12px 310px;
    /* box-shadow:5px 5px 5px 2px grey; */
 }
 
 .contact_person{
-	margin-left: 190px;
+	margin: 0px 0px 12px 255px;
 	margin-bottom: 20px;
 	color: #FD5523;
 	font-family: 'Montserrat', sans-seri
