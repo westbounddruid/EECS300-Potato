@@ -160,19 +160,7 @@ h3 {
     
     
 }
-.mdl-checkbox{
-    display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: left;
-    width: 100%;
-    height: auto;
-    border: solid #37966F 1px;
-    border-radius: 2px;
-    margin: 5px;
-    text-decoration: none;
 
-}
 
 
 .sidebar{
@@ -239,7 +227,20 @@ input[type=text]#search-input {
     margin: 10px 0px 0px 340px;
 
 }
+.mdl-checkbox{
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: left;
+    width: 100%;
+    height: auto;
+    border: solid #37966F 1px;
+    border-radius: 2px;
+    margin: 5px;
+    text-decoration: none;
+    color: #356859;
 
+}
 
 /*-----------Item Grid---------*/
 
