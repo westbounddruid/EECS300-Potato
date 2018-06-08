@@ -521,9 +521,9 @@ color: #FD5523;
 	flex-wrap: wrap;
 	flex-direction: row;
     align-items: center;
-    margin-left: 25%;
     width: 100%;
     height:auto;
+    
  }
 
 .alert_section{
