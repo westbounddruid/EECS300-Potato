@@ -589,3 +589,15 @@ color: #FD5523;
   .mdl-dialog__content {
     padding: 20px 24px 24px 24px;
     color: rgba(0,0,0, 0.54); }
+
+ #submit {
+    	  border-radius: 24px;
+  font-family: 'Lekton', sans-serif;
+  color: #356859;
+  font-size: 18px;
+  background: #FFFdf2;
+  padding: 1px 20px 10px 20px;
+  border: solid #356859 2px;
+  text-decoration: none;
+  cursor: pointer;
+    }
