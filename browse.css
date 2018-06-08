@@ -364,6 +364,8 @@ color:#FD5523 ;
 
 .detailTable{
 	margin:0 0 12px 255px;
+	text-align: left;
+	color: #356859;
 	}
 	
 .item_detail_container {
