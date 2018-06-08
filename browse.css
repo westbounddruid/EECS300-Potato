@@ -273,6 +273,18 @@ border: none;
 	position: relative;
 }
 
+.own_listing_icon {
+	z-index: 2 !important;
+	position: absolute !important;
+	right: 5px;
+	top: 5px;
+
+}
+
+.own_listing_icon:hover {
+	color: #FD5523 !important;
+}
+
 .item_pic {
 	height: 160px;
 	width: 100%;
